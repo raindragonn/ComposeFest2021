@@ -54,7 +54,6 @@ fun MessageCard(msg: Message) {
                 .border(1.5.dp, MaterialTheme.colors.secondaryVariant, CircleShape)
         )
         Spacer(modifier = Modifier.width(8.dp))
-
         // We keep track if the message is expanded or not in this
         // variable
         var isExpanded by remember { mutableStateOf(false) }
