@@ -33,8 +33,11 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Column {
-                        PhotographerCard()
-                        ScrollingList()
+                        MyOwnColumn(Modifier.padding(8.dp)) {
+                            Text("CustomLayout")
+                            Text("Places Items")
+                            Text("vertically")
+                        }
                     }
                 }
             }
